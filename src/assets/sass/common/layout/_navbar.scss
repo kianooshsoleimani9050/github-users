@@ -1,0 +1,19 @@
+.navbar_div__container {
+  height: 3.75rem;
+  background-color: $medium-black-color;
+  @include all_fonts_styles($fs-large, 700, inherit, $light-white-color);
+}
+.navbar_text_h2__container {
+  background: linear-gradient(
+    to right,
+    $dark-white-color 20%,
+    $light-silver-color 40%,
+    $medium-silver-color 60%,
+    $medium-white-color 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-moving-background 3s linear infinite;
+}
