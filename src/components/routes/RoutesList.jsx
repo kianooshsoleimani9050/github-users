@@ -1,17 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import PrivateRoute from "./PrivateRoute";
+import SingleUser from "../pages/SingleUser";
 const RoutesList = () => {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <PrivateRoute>
-            <Home />
-          </PrivateRoute>
-        }
-      />
+      <Route path="/" element={<Home />} />
+      <Route path="/user/:login" element={<SingleUser />} />
     </Routes>
   );
 };
