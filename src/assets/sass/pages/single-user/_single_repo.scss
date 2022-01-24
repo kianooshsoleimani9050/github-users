@@ -1,0 +1,31 @@
+.single_repo_div__container {
+  min-height: 10rem;
+  border: 1px solid $light-black-color;
+  border-radius: 5px;
+}
+.single_repo_a__container {
+  @include all_fonts_styles($fs-medium, 600, inherit, $medium-silver-color);
+  text-decoration: none;
+  &:hover {
+    color: $dark-white-color;
+  }
+}
+.single_repo_p__container {
+  @include all_fonts_styles($fs-normal, 400, inherit, $dark-white-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px; /* fallback */
+  max-height: 60px; /* fallback */
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.single_repo_lang_div__container {
+  width: 10px;
+  height: 10px;
+  background-color: $violet-color;
+  border-radius: 50%;
+}
+.single_repo_lang_span__container {
+  @include all_fonts_styles($fs-normal, 600, inherit, $light-white-color);
+}
