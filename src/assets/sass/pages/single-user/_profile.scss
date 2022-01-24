@@ -1,0 +1,26 @@
+.user_profile_div__container {
+  @include all_fonts_styles($fs-normal, 500, inherit, $light-white-color);
+  & > img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: rgba($color: $medium-white-color, $alpha: 0.2);
+  }
+  & > h4 {
+    width: 100%;
+    @include all_fonts_styles($fs-medium, 600, inherit, $light-white-color);
+  }
+  & > h5 {
+    width: 100%;
+    @include all_fonts_styles($fs-normal, 600, inherit, $medium-silver-color);
+  }
+}
+.user_profile_a__container {
+  text-decoration: none;
+  color: $medium-silver-color;
+  &:hover {
+    color: $dark-white-color;
+  }
+}
